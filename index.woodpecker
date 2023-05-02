@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+	head
+		title Time Capturer
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="description" content="woodpecker website template")
+		meta(name="keywords" content="Time Capturer, woodpecker, template, html, sass, jquery")
+		meta(name="author" content="Woodpecker")
+		link(rel="stylesheet" href="assets/css/main.css")
+	body
+
+		section(id="hero")
+			include ./letters/a.html
+			header
+				.nav-toggle
+					p Menu
+					span
+				ul(class="nav")
+					li #[a(href="#about") About]
+					li #[a(href="#full-slide") Work]
+					li #[a(href="#contact") Contact]
+			.wrapper
+				.welcome
+					h1 #[strong Apollo] Woodpecker Template
+					p Capturering Moments In Time & Space..
+				.photographer
+					img(src="assets/img/hero.png" alt="Photographer")
+		section(id="about")
+			include ./letters/p.html
+			.wrapper
+				.camera
+					img(src="assets/img/camera.png" alt="Camera")
+				.blurb
+					h2 My name is #[strong Time Capturer]
+					p EWarping Through Time & Space, To Make Art From Reality.
+
+The Universe Is The Greatest Artist & Thus Must Be Admired & Observed..
+					.social
+						a(href="#") #[i(class="icon-facebook")]
+						a(href="#") #[i(class="icon-instagram")]
+						a(href="#") #[i(class="icon-twitter")]
+						a(href="#") #[i(class="icon-pinterest-p")]
+		section(id="full-slide")
+			include ./letters/o.html
+			ul(class="banner")
+				li(class="active")
+				li
+				li
+			i(class="icon-chevron-thin-left prev")
+			i(class="icon-chevron-thin-right next")
+		section(id="featured")
+			include ./letters/l.html
+			.wrapper
+				.blurb
+					h2 #[strong Capturing] Those Moments
+					p Seeking The Beauty In Life..
+				.featured
+					img(src="assets/img/featured.jpg" alt="Featured")
+		section(id="three-slide")
+			include ./letters/l.html
+			.wrapper
+				ul(class="slider")
+					li(class="back")
+						img(src="assets/img/three-slide/thumb-1.jpg")
+					li(class="current")
+						img(src="assets/img/three-slide/thumb-2.jpg")
+					li(class="front")
+						img(src="assets/img/three-slide/thumb-3.jpg")
+					li
+						img(src="assets/img/three-slide/thumb-4.jpg")
+			i(class="icon-chevron-thin-left prev")
+			i(class="icon-chevron-thin-right next")
+		section(id="contact")
+			include ./letters/o.html
+			.wrapper
+				.blurb
+					h2 #[strong Say] Hi!!!
+					p Contact via qTox..
+				form
+					input(type="email" placeholder="Your Email")
+					input(type="text" placeholder="Subject")
+					textarea(placeholder="Message")
+					input(type="submit" value="Send Message")
+			p(class="copyright") &copy; Woodpecker 2023
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		script window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+		script(src="assets/js/functions-min.js")
